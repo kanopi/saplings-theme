@@ -1,0 +1,27 @@
+name: 'Saplings - Theme'
+description: 'Configures the base theme and dependencies.'
+type: 'Site'
+install:
+  - ds
+  - ds_extras
+  - layout_options
+  - ui_patterns
+  - ui_patterns_ds
+  - ui_patterns_layouts
+  - ui_patterns_library
+  - ui_patterns_field_formatters
+  - ui_patterns_settings
+  - ui_skins
+  - ui_styles
+  # The block configs were copied into this recipe.
+  - ui_suite_bootstrap
+config:
+  import:
+    # Only Display suite has config.
+    ds: "*"
+  actions:
+    # Allow Display Suite on fields and Layouts.
+    ds.settings:
+      simple_config_update:
+        field_template: true
+        ft-layout-builder: true
