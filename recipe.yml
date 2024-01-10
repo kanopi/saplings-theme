@@ -64,3 +64,7 @@ config:
       simple_config_update:
         region: sidebar_first
         weight: 0
+    # Set the default theme.
+    system.theme:
+      simple_config_update:
+        default: ui_suite_bootstrap
