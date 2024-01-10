@@ -2,6 +2,9 @@ name: 'Saplings - Theme'
 description: 'Configures the base theme and dependencies.'
 type: 'Site'
 install:
+  # Core.
+  - help
+  # Contrib.
   - ds
   - ds_extras
   - layout_options
