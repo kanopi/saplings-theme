@@ -60,9 +60,6 @@ config:
       simple_config_update:
         region: header
         weight: 0
-    block.block.ui_suite_bootstrap_primary_local_tasks:
-      simple_config_update:
-        status: false
     block.block.ui_suite_bootstrap_tools:
       simple_config_update:
         region: sidebar_first
