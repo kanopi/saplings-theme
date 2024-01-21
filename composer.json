@@ -1,6 +1,6 @@
 {
     "name": "kanopi/saplings-theme",
-    "description": "Configures the base theme and dependencies.",
+    "description": "Configures the base and child theme with dependencies.",
     "type": "drupal-recipe",
     "license": "GPL-2.0-or-later",
     "authors": [
@@ -24,6 +24,7 @@
         "drupal/ui_patterns_settings": "^2.2@alpha",
         "drupal/ui_skins": "^1.0@alpha",
         "drupal/ui_styles": "^1.7",
-        "drupal/ui_suite_bootstrap": "*"
+        "drupal/ui_suite_bootstrap": "*",
+        "kanopi/saplings_child": "*"
     }
 }

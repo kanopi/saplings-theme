@@ -1,5 +1,5 @@
 name: 'Saplings - Theme'
-description: 'Configures the base theme and dependencies.'
+description: 'Configures the base and child theme with dependencies.'
 type: 'Site'
 install:
   # Core.
@@ -8,6 +8,7 @@ install:
   - ds
   - ds_extras
   - layout_options
+  - saplings_child
   - ui_patterns
   - ui_patterns_ds
   - ui_patterns_layouts
@@ -16,21 +17,20 @@ install:
   - ui_patterns_settings
   - ui_skins
   - ui_styles
-  # The block configs were copied into this recipe.
   - ui_suite_bootstrap
 config:
   import:
     # Only Display suite has config.
     ds: "*"
     # Import blocks that Stark does not automatically create below.
-    ui_suite_bootstrap:
-      - block.block.ui_suite_bootstrap_breadcrumbs
-      - block.block.ui_suite_bootstrap_content
-      - block.block.ui_suite_bootstrap_footer
-      - block.block.ui_suite_bootstrap_help
-      - block.block.ui_suite_bootstrap_main_menu
-      - block.block.ui_suite_bootstrap_messages
-      - block.block.ui_suite_bootstrap_page_title
+    saplings_child:
+      - block.block.saplings_child_breadcrumbs.yml
+      - block.block.saplings_child_content.yml
+      - block.block.saplings_child_footer.yml
+      - block.block.saplings_child_help.yml
+      - block.block.saplings_child_main_menu.yml
+      - block.block.saplings_child_messages.yml
+      - block.block.saplings_child_page_title.yml
   actions:
     # Allow Display Suite on fields and Layouts.
     ds.settings:
@@ -41,30 +41,29 @@ config:
     # automaticaly duplicated. In our case, on minimal, the theme is Stark.
     # We set the blocks we don't want to false, and alter the config of the
     # blocks that were created.
-    block.block.ui_suite_bootstrap_admin:
+    block.block.saplings_child_admin:
       simple_config_update:
         status: false
-    block.block.ui_suite_bootstrap_branding:
+    block.block.saplings_child_branding:
       simple_config_update:
         region: navigation
         weight: 0
-    block.block.ui_suite_bootstrap_local_actions:
+    block.block.saplings_child_local_actions:
       simple_config_update:
         region: header
         weight: 20
-    block.block.ui_suite_bootstrap_local_tasks:
+    block.block.saplings_child_local_tasks:
       simple_config_update:
         region: header
         weight: 10
-    block.block.ui_suite_bootstrap_page_title:
+    block.block.saplings_child_page_title:
       simple_config_update:
         region: header
         weight: 0
-    block.block.ui_suite_bootstrap_tools:
+    block.block.saplings_child_tools:
       simple_config_update:
-        region: sidebar_first
-        weight: 0
+        status: false
     # Set the default theme.
     system.theme:
       simple_config_update:
-        default: ui_suite_bootstrap
+        default: saplings_child
