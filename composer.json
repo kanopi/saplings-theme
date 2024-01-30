@@ -18,6 +18,7 @@
     "require": {
         "bower-asset/bootstrap": "^5.3.0",
         "drupal/ds": "^3.15",
+        "drupal/field_formatter": "3.x-dev@dev",
         "drupal/layout_options": "^1.4",
         "drupal/ui_patterns": "^1.7",
         "drupal/ui_patterns_field_formatters": "^2.0",
