@@ -25,7 +25,7 @@
         "drupal/ui_patterns_settings": "^2.2@alpha",
         "drupal/ui_skins": "^1.0@alpha",
         "drupal/ui_styles": "^1.7",
-        "drupal/ui_suite_bootstrap": "5.0.x-dev@dev",
+        "drupal/ui_suite_bootstrap": "^5.0@alpha",
         "kanopi/saplings_child": "*"
     }
 }
