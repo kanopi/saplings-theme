@@ -59,8 +59,7 @@ config:
         weight: 10
     block.block.saplings_child_page_title:
       simple_config_update:
-        region: header
-        weight: 0
+        status: false
     block.block.saplings_child_tools:
       simple_config_update:
         status: false
