@@ -71,3 +71,9 @@ config:
     system.theme:
       simple_config_update:
         default: saplings_child
+    # Allow anon to access patterns page.
+    user.role.anonymous:
+      ensure_exists:
+        id: anonymous
+      grantPermissions:
+        - 'access patterns page'
