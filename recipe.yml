@@ -5,6 +5,7 @@ install:
   # Core.
   - help
   # Contrib.
+  - block_class
   - ds
   - ds_extras
   - layout_options
@@ -58,12 +59,21 @@ config:
         weight: 10
     block.block.saplings_child_page_title:
       simple_config_update:
-        region: header
-        weight: 0
+        status: false
     block.block.saplings_child_tools:
       simple_config_update:
         status: false
+    # Adds used Block classes.
+    block_class.settings:
+      simple_config_update:
+        block_classes_stored: '{"col":"col","col-3":"col-3","col-9":"col-9","col-12":"col-12","col-md-3":"col-md-3","col-md-9":"col-md-9"}'
     # Set the default theme.
     system.theme:
       simple_config_update:
         default: saplings_child
+    # Allow anon to access patterns page.
+    user.role.anonymous:
+      ensure_exists:
+        id: anonymous
+      grantPermissions:
+        - 'access patterns page'
