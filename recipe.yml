@@ -5,6 +5,7 @@ install:
   # Core.
   - help
   # Contrib.
+  - block_class
   - ds
   - ds_extras
   - layout_options
@@ -63,6 +64,10 @@ config:
     block.block.saplings_child_tools:
       simple_config_update:
         status: false
+    # Adds used Block classes.
+    block_class.settings:
+      simple_config_update:
+        block_classes_stored: '{"col":"col","col-3":"col-3","col-9":"col-9","col-12":"col-12","col-md-3":"col-md-3","col-md-9":"col-md-9"}'
     # Set the default theme.
     system.theme:
       simple_config_update:
