@@ -60,7 +60,12 @@ config:
         weight: 10
     block.block.saplings_child_page_title:
       simple_config_update:
-        status: false
+        status: true
+        region: content
+        weight: -30
+        visibility.request_path.id: request_path
+        visibility.request_path.negate: false
+        visibility.request_path.pages: '/user/*'
     block.block.saplings_child_tools:
       simple_config_update:
         status: false
