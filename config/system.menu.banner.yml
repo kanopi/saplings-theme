@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: banner
+label: Banner
+description: "A menu that lies above the header closest to the browser's chrome."
+locked: false
