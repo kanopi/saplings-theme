@@ -14,7 +14,7 @@ third_party_settings:
 id: saplings_child_legal
 theme: saplings_child
 region: footer
-weight: -2
+weight: -3
 provider: null
 plugin: 'system_menu_block:legal'
 settings:
