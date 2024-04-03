@@ -12,7 +12,7 @@ third_party_settings:
 id: saplings_child_sitebranding_footer
 theme: saplings_child
 region: footer
-weight: -4
+weight: -6
 provider: null
 plugin: system_branding_block
 settings:

@@ -9,6 +9,7 @@ install:
   - ds
   - ds_extras
   - layout_options
+  - menu_bootstrap_icon
   - saplings_child
   - ui_patterns
   - ui_patterns_ds
@@ -33,6 +34,7 @@ config:
       - block.block.saplings_child_main_menu.yml
       - block.block.saplings_child_messages.yml
       - block.block.saplings_child_page_title.yml
+      - block.block.saplings_child_social.yml
   actions:
     # Allow Display Suite on fields and Layouts.
     ds.settings:

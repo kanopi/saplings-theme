@@ -14,7 +14,7 @@ third_party_settings:
 id: saplings_child_footer
 theme: saplings_child
 region: footer
-weight: -3
+weight: -5
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
