@@ -10,10 +10,10 @@ dependencies:
     - saplings_child
 third_party_settings:
   block_class:
-    classes: 'col col-12'
+    classes: 'd-block d-lg-none'
 id: saplings_child_banner
 theme: saplings_child
-region: banner
+region: navigation_collapsible
 weight: -5
 provider: null
 plugin: 'system_menu_block:banner'

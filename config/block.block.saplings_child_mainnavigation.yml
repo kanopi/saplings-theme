@@ -10,7 +10,7 @@ dependencies:
 id: saplings_child_mainnavigation
 theme: saplings_child
 region: navigation_collapsible
-weight: 0
+weight: -6
 provider: null
 plugin: 'system_menu_block:main'
 settings:
