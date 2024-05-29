@@ -27,6 +27,8 @@ config:
     ds: "*"
     # Import blocks that Stark does not automatically create below.
     saplings_child:
+      - block.block.saplings_child_banner_2.yml
+      - block.block.saplings_child_banner.yml
       - block.block.saplings_child_breadcrumbs.yml
       - block.block.saplings_child_content.yml
       - block.block.saplings_child_footer.yml

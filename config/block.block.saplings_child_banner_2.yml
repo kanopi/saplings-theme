@@ -4,17 +4,13 @@ dependencies:
   config:
     - system.menu.banner
   module:
-    - block_class
     - system
   theme:
     - saplings_child
-third_party_settings:
-  block_class:
-    classes: 'd-block d-lg-none'
-id: saplings_child_banner
+id: saplings_child_banner_2
 theme: saplings_child
-region: navigation_collapsible
-weight: -5
+region: banner
+weight: 0
 provider: null
 plugin: 'system_menu_block:banner'
 settings:
