@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.banner
+  module:
+    - system
+  theme:
+    - saplings_child
+id: saplings_child_banner_2
+theme: saplings_child
+region: banner
+weight: 0
+provider: null
+plugin: 'system_menu_block:banner'
+settings:
+  id: 'system_menu_block:banner'
+  label: Banner
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
