@@ -11,6 +11,7 @@ install:
   - layout_options
   - menu_bootstrap_icon
   - saplings_child
+  - twig_tweak
   - ui_patterns
   - ui_patterns_ds
   - ui_patterns_field_formatters
