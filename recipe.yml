@@ -1,5 +1,5 @@
-name: 'Saplings - Theme'
-description: 'Configures the base and child theme with dependencies.'
+name: 'Saplings - Theme recipe'
+description: 'Configures Saplings Child theme and dependent modules and UI Bootstrap base theme.'
 type: 'Site'
 install:
   # Core.
@@ -23,25 +23,25 @@ install:
   - ui_styles
   - ui_suite_bootstrap
 config:
+  strict: false
   import:
     # Only Display suite has config.
     ds: "*"
     # Import blocks that Stark does not automatically create below.
     saplings_child:
-      - block.block.saplings_child_banner_2.yml
-      - block.block.saplings_child_banner.yml
-      - block.block.saplings_child_breadcrumbs.yml
-      - block.block.saplings_child_content.yml
-      - block.block.saplings_child_footer.yml
-      - block.block.saplings_child_help.yml
-      - block.block.saplings_child_main_menu.yml
-      - block.block.saplings_child_messages.yml
-      - block.block.saplings_child_page_title.yml
-      - block.block.saplings_child_social.yml
+      - block.block.saplings_child_breadcrumbs
+      - block.block.saplings_child_content
+      - block.block.saplings_child_footer
+      - block.block.saplings_child_help
+      - block.block.saplings_child_mainnavigation
+      - block.block.saplings_child_main_menu
+      - block.block.saplings_child_messages
+      - block.block.saplings_child_page_title
+      - block.block.saplings_child_sitebranding_footer
   actions:
     # Allow Display Suite on fields and Layouts.
     ds.settings:
-      simple_config_update:
+      simpleConfigUpdate:
         field_template: true
         ft-layout-builder: true
     # When a theme is enabled in Drupal, the blocks of the existing theme are
@@ -49,38 +49,32 @@ config:
     # We set the blocks we don't want to false, and alter the config of the
     # blocks that were created.
     block.block.saplings_child_admin:
-      simple_config_update:
-        status: false
+      setStatus: false
     block.block.saplings_child_branding:
-      simple_config_update:
-        region: navigation
-        weight: 0
+      setRegion: navigation
+      setWeight: 0
     block.block.saplings_child_local_actions:
-      simple_config_update:
-        region: header
-        weight: 20
+      setRegion: header
+      setWeight: 20
     block.block.saplings_child_local_tasks:
-      simple_config_update:
-        region: header
-        weight: 10
+      setRegion: header
+      setWeight: 10
     block.block.saplings_child_page_title:
-      simple_config_update:
-        status: true
-        region: content
-        weight: -30
+      setStatus: true
+      setRegion: content
+      setWeight: -30
+      simpleConfigUpdate:
         visibility.request_path.id: request_path
         visibility.request_path.negate: false
         visibility.request_path.pages: '/user/*'
     block.block.saplings_child_tools:
-      simple_config_update:
-        status: false
+      setStatus: false
     # Set the default theme.
     system.theme:
-      simple_config_update:
+      simpleConfigUpdate:
         default: saplings_child
-    # Allow anon to access patterns page.
+    # Allow anonymous users to access patterns page.
     user.role.anonymous:
-      ensure_exists:
+      createIfNotExists:
         id: anonymous
-      grantPermissions:
-        - 'access patterns page'
+      grantPermission: 'access patterns page'
