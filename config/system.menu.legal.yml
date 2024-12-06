@@ -3,5 +3,5 @@ status: true
 dependencies: {  }
 id: legal
 label: Legal
-description: 'Used to store site legal links.'
+description: 'A menu used to store site legal links.'
 locked: false

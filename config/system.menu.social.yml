@@ -3,5 +3,5 @@ status: true
 dependencies: {  }
 id: social
 label: Social
-description: ''
+description: 'A menu used to store social media links.'
 locked: false
