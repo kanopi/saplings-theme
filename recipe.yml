@@ -8,6 +8,7 @@ install:
   - block_class
   - ds
   - ds_extras
+  - field_group
   - layout_options
   - menu_bootstrap_icon
   - saplings_child
