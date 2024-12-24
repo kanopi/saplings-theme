@@ -5,20 +5,9 @@ dependencies:
     - system.menu.social
   module:
     - system
-    - ui_styles
   theme:
     - saplings_child
-third_party_settings:
-  ui_styles:
-    block:
-      selected: {  }
-      extra: ''
-    title:
-      selected: {  }
-      extra: ''
-    content:
-      selected: {  }
-      extra: ''
+third_party_settings: {  }
 id: saplings_child_social
 theme: saplings_child
 region: footer
