@@ -76,6 +76,4 @@ config:
         default: saplings_child
     # Allow anonymous users to access patterns page.
     user.role.anonymous:
-      createIfNotExists:
-        id: anonymous
       grantPermission: 'access patterns page'
