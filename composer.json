@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "bower-asset/bootstrap": "^5.3.0",
+        "bower-asset/bootstrap": "*",
         "drupal/block_class": "^4",
         "drupal/core": ">=10.4",
         "drupal/ds": "^3.15",
