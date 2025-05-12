@@ -34,10 +34,10 @@ config:
       - block.block.saplings_child_content
       - block.block.saplings_child_footer
       - block.block.saplings_child_help
-      - block.block.saplings_child_mainnavigation
       - block.block.saplings_child_main_menu
       - block.block.saplings_child_messages
       - block.block.saplings_child_page_title
+      - block.block.saplings_child_search
       - block.block.saplings_child_sitebranding_footer
   actions:
     # Allow Display Suite on fields and Layouts.
